@@ -90,7 +90,7 @@ namespace SparkCore_Init
         {
             // fill port name according to the selected device
             if (lbDevices.SelectedItem != null)
-                tbPort.Text = lbDevices.SelectedItem.GetType().GetProperty("DeviceID").GetValue(lbDevices.SelectedItem).ToString();
+                tbPort.Text = ((dynamic)lbDevices.SelectedItem).DeviceID.ToString();
         }
 
         private void cbConnect_CheckedChanged(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace SparkCore_Init
             
                 if (InvokeRequired)
                 {
-                    BeginInvoke(new Action(delegate
+                    BeginInvoke((MethodInvoker)delegate
                     {
                         switch (waitingFor)
                         {
@@ -194,7 +194,7 @@ namespace SparkCore_Init
                                 Console.Write(s);
                                 break;
                         }
-                    }));
+                    });
                 }
             }
             catch { }
@@ -204,16 +204,15 @@ namespace SparkCore_Init
         {
             // waiting for answers after/during wifi setup
             waitingFor = "w";
-            string securityID = comboSecurity.SelectedItem.GetType().
-                GetProperty("SecurityIDType").GetValue(comboSecurity.SelectedItem).ToString();
+            int securityID = ((dynamic)comboSecurity.SelectedItem).SecurityIDType;
 
             try
             {
                 // send required wifi settings to Core
                 serialPort.Write("w");
                 serialPort.WriteLine(tbSSID.Text);
-                serialPort.WriteLine(securityID);
-                if (securityID != "0")
+                serialPort.WriteLine(securityID.ToString());
+                if (securityID != 0)
                     serialPort.WriteLine(tbPassword.Text);
             }
             catch (Exception ex)
@@ -225,9 +224,7 @@ namespace SparkCore_Init
         private void comboSecurity_SelectedIndexChanged(object sender, EventArgs e)
         {
             // enable password textbox if security is not "no security"
-            string securityID = comboSecurity.SelectedItem.GetType().
-                GetProperty("SecurityIDType").GetValue(comboSecurity.SelectedItem).ToString();
-            tbPassword.Enabled = securityID != "0";
+            tbPassword.Enabled = ((dynamic)comboSecurity.SelectedItem).SecurityIDType != 0;
         }
 
         private void btnDriver_Click(object sender, EventArgs e)

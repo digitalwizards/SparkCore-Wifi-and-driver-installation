@@ -11,6 +11,7 @@ namespace SparkCore_Init
         [STAThread]
         static void Main()
         {
+            Console.Title = "Spark Core - basic settings";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

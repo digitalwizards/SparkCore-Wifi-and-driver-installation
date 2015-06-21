@@ -10,3 +10,9 @@ C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore_conf\SparkCore_conf\Sp
 C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\bin\Debug\SparkCore_Init.exe.config
 C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.exe
 C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.pdb
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.Form1.resources
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.Properties.Resources.resources
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\obj\Debug\SparkCore_Init.csproj.GenerateResource.Cache
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\bin\Debug\SparkCore_Init.exe
+C:\Users\Martin\Desktop\DWIZ\elektro\SparkBrain\SparkCore-Wifi-and-driver-installation\SparkCore_Init\bin\Debug\SparkCore_Init.pdb
